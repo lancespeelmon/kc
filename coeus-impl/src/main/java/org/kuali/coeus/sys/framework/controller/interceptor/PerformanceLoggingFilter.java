@@ -59,14 +59,11 @@ public class PerformanceLoggingFilter implements Filter {
                          ServletResponse response, 
                          FilterChain chain) throws IOException, ServletException {
         long start = System.currentTimeMillis();
-        long startMem = Runtime.getRuntime().freeMemory();
         chain.doFilter(request, response);
 
         if (LOG.isInfoEnabled() ) {
             long elapsed = System.currentTimeMillis() - start;
-            long usedMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
             LOG.info(((HttpServletRequest) request).getRequestURI() + " : " + elapsed + " ms");
-            LOG.info(((HttpServletRequest) request).getRequestURI() + " : " + usedMemory + " memory used");
         }
     }
 }
