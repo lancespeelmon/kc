@@ -14,6 +14,8 @@ Needs more attention
     * Has gone missing, how to handle?
   * `src/main/resources/META-INF/kc-config-defaults.xml`
     * Needs `<param name="org.kuali.kra.service.impl.DocHandlerUrlPrefixPublishingServiceImpl.publishingEnabled">true</param>` once we resolve the `DocHandlerUrlPrefixPublishingServiceImpl` merge above.
+  * `src/main/resources/org/kuali/kra/CoreSpringBeans.xml`
+    * Needs `<property name="publishingEnabled" value="${org.kuali.kra.service.impl.DocHandlerUrlPrefixPublishingServiceImpl.publishingEnabled}" />` once we resolve the `DocHandlerUrlPrefixPublishingServiceImpl` merge above.
 
 
 Complete
@@ -26,6 +28,8 @@ Complete
     * Merged.
   * `src/main/resources/META-INF/kc-config-defaults.xml`
     * Merged CSS and JS changes for skin.
+  * `src/main/resources/org/kuali/kra/CoreSpringBeans.xml`
+    * Added tokenGenerator and urlGenerator bean definitions.
 * `787cab6` Import svn:ignore from upstream trunk.
 * `9ea9f23` Removed unit tests as they only work under very controlled conditions AFAIK.
   * Unnecessary - not merged.
