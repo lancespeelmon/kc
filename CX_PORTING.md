@@ -12,6 +12,9 @@ Needs more attention
     * Where should this be placed?
   * `src/main/java/org/kuali/kra/service/impl/DocHandlerUrlPrefixPublishingServiceImpl.java`
     * Has gone missing, how to handle?
+  * `src/main/resources/META-INF/kc-config-defaults.xml`
+    * Needs `<param name="org.kuali.kra.service.impl.DocHandlerUrlPrefixPublishingServiceImpl.publishingEnabled">true</param>` once we resolve the `DocHandlerUrlPrefixPublishingServiceImpl` merge above.
+
 
 Complete
 --------
@@ -21,6 +24,8 @@ Complete
     * Mostly abandoned change; removed bogus memory calculation.
   * `src/main/resources/ApplicationResources.properties`
     * Merged.
+  * `src/main/resources/META-INF/kc-config-defaults.xml`
+    * Merged CSS and JS changes for skin.
 * `787cab6` Import svn:ignore from upstream trunk.
 * `9ea9f23` Removed unit tests as they only work under very controlled conditions AFAIK.
   * Unnecessary - not merged.
