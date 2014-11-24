@@ -6,11 +6,12 @@
 **/coeus.iml
 **/.DS_Store
 **/Thumbs.db
-bin
+bin/
 .project
 .classpath
 .settings
+.externalToolBuilders
 target
 .idea
 coeus.iml
-**/bin
+**/bin/
