@@ -32,6 +32,8 @@ Complete
     * Added tokenGenerator and urlGenerator bean definitions.
   * `src/main/resources/org/kuali/kra/datadictionary/ProposalDevelopmentDocument.xml`
     * Merged.
+  * `src/main/webapp/sponsorHierarchyMaint.jsp`
+    * Merged.
 * `787cab6` Import svn:ignore from upstream trunk.
 * `9ea9f23` Removed unit tests as they only work under very controlled conditions AFAIK.
   * Unnecessary - not merged.
